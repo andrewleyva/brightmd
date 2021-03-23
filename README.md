@@ -1,5 +1,19 @@
 # Getting Started with Create React App
 
+This is a Sample Bright MD App
+
+- Uses basic hooks.
+- Focus on reusable components (some SFC). 
+- toggle is clunky, have to click on label
+
+## More Time allowing
+Would like to add:
+- more styling
+- aria tags
+- media queries
+- might use redux depending onther features in the app
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

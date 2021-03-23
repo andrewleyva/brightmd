@@ -36,3 +36,188 @@
     transform: rotate(360deg);
   }
 }
+
+section {
+  position: relative;
+  border-bottom: 1px solid gray;
+  margin: 0 20px;
+  padding-bottom: 20px;
+}
+
+section:last-child {
+  border: none;
+}
+
+section h1 ~ .buttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+section dl  {
+  text-align: left;
+}
+/* section dl dt,
+section dl dd {
+  width: 100px;
+  display: inline-block;
+  margin: 0;  
+}
+
+section dl dd:after{
+  display: block;
+  content: '';
+} */
+
+dl {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  width: 350px;
+  overflow: visible;
+}
+
+dl dd, dl dt {
+  line-height: 30px;
+}
+
+dl dt {
+  display:table-cell;
+  vertical-align:middle;
+  width: 30%;
+  padding-right:5px;
+}
+dl dd {
+  display:table-cell;
+  vertical-align:middle;
+  width: 70%;
+  margin: 0;
+}
+dl dd {
+  flex:0 0 50%;
+  margin-left: auto;
+  text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+input[type=text] {
+  border: 1px solid #333;
+  border-radius: 2px;
+  height: 20px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button.primary {
+  border: none;
+  background: #2185d0;
+  color: white;
+  height: 30px;
+  border-radius: 4px;
+  margin: 0 5px;
+  padding: 5px;
+}
+
+button.secondary {
+  border: none;
+  background: white;
+  color: #2185d0;
+  height: 30px;
+  margin: 0 5px;
+  padding: 5px;
+}
+
+button.link {
+  border: none;
+  background: none;
+  color: #2185d0;
+  height: 30px;
+  margin: 0 5px;
+  padding: 5px;
+}
+* {
+  text-align: left;
+}
+
+a {
+  color: #2185d0;
+}
+/**********/
+/* toggle */
+
+/* The toggle - the box around the slider */
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 14px;
+  margin-right: 10px;
+
+}
+
+/* Hide default HTML checkbox */
+.toggle ~ label {
+  cursor: pointer;
+}
+
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 1px;
+  bottom: 1px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  /* -webkit-transform: translateX(16px); */
+  /* -ms-transform: translateX(16px); */
+  transform: translateX(5px);
+}
+
+table {
+  border: 0;
+}
+
+table tr {
+  height: 30px;
+}
+
+
+
+/* for mobile I would probably use media queries, ran out of time to implement this */
